@@ -1,0 +1,480 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://match-nepali.appspot.com/_ah/api",
+  "name" : "matchnepali",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "adapter" : {
+    "bns" : "https://match-nepali.appspot.com/_ah/spi",
+    "deadline" : 65.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "methods" : {
+    "matchnepali.user.profile.save" : {
+      "path" : "saveUserProfile",
+      "httpMethod" : "post",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "245777491056-ppjmr2kjk8mbkoo3ra4civmma7hkn0cd.apps.googleusercontent.com" ],
+      "clientIds" : [ "245777491056-ppjmr2kjk8mbkoo3ra4civmma7hkn0cd.apps.googleusercontent.com", "androididXXXX", "xxxxxxxwebclientidios" ],
+      "rosyMethod" : "com.nepali36.endpoints.UserProfileEndpoint.saveUserProfile",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "matchnepali.user.profile.update" : {
+      "path" : "userprofile",
+      "httpMethod" : "post",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "245777491056-ppjmr2kjk8mbkoo3ra4civmma7hkn0cd.apps.googleusercontent.com" ],
+      "clientIds" : [ "245777491056-ppjmr2kjk8mbkoo3ra4civmma7hkn0cd.apps.googleusercontent.com", "androididXXXX", "xxxxxxxwebclientidios" ],
+      "rosyMethod" : "com.nepali36.endpoints.UserProfileEndpoint.updateUserProfile",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "matchnepali.user.profile.get" : {
+      "path" : "user/profile/",
+      "httpMethod" : "get",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "245777491056-ppjmr2kjk8mbkoo3ra4civmma7hkn0cd.apps.googleusercontent.com" ],
+      "clientIds" : [ "245777491056-ppjmr2kjk8mbkoo3ra4civmma7hkn0cd.apps.googleusercontent.com", "androididXXXX", "xxxxxxxwebclientidios" ],
+      "rosyMethod" : "com.nepali36.endpoints.UserProfileEndpoint.getUserProfile",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "matchnepali.user.profile.delete" : {
+      "path" : "user/profile/delete",
+      "httpMethod" : "get",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "245777491056-ppjmr2kjk8mbkoo3ra4civmma7hkn0cd.apps.googleusercontent.com" ],
+      "clientIds" : [ "245777491056-ppjmr2kjk8mbkoo3ra4civmma7hkn0cd.apps.googleusercontent.com", "androididXXXX", "xxxxxxxwebclientidios" ],
+      "rosyMethod" : "com.nepali36.endpoints.UserProfileEndpoint.deleteUserProfile",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "matchnepali.user.account.save" : {
+      "path" : "user/account/save",
+      "httpMethod" : "post",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "245777491056-ppjmr2kjk8mbkoo3ra4civmma7hkn0cd.apps.googleusercontent.com" ],
+      "clientIds" : [ "245777491056-ppjmr2kjk8mbkoo3ra4civmma7hkn0cd.apps.googleusercontent.com", "androididXXXX", "xxxxxxxwebclientidios" ],
+      "rosyMethod" : "com.nepali36.endpoints.UserAccountEndPoint.saveUserAccount",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "matchnepali.user.account.get" : {
+      "path" : "user/account",
+      "httpMethod" : "get",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "245777491056-ppjmr2kjk8mbkoo3ra4civmma7hkn0cd.apps.googleusercontent.com" ],
+      "clientIds" : [ "245777491056-ppjmr2kjk8mbkoo3ra4civmma7hkn0cd.apps.googleusercontent.com", "androididXXXX", "xxxxxxxwebclientidios" ],
+      "rosyMethod" : "com.nepali36.endpoints.UserAccountEndPoint.getUserAccount",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "UserProfile" : {
+        "id" : "UserProfile",
+        "type" : "object",
+        "properties" : {
+          "key" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "crtdDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "modifiedDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "firstName" : {
+            "type" : "string"
+          },
+          "accountKey" : {
+            "type" : "string"
+          },
+          "email" : {
+            "type" : "string"
+          },
+          "lastName" : {
+            "type" : "string"
+          },
+          "fullname" : {
+            "type" : "string"
+          },
+          "fbId" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "age" : {
+            "type" : "integer"
+          },
+          "location" : {
+            "$ref" : "Location"
+          },
+          "sex" : {
+            "$ref" : "Sex"
+          },
+          "pictures" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Link"
+            }
+          },
+          "description" : {
+            "$ref" : "Text"
+          },
+          "_archived" : {
+            "type" : "boolean"
+          }
+        }
+      },
+      "Location" : {
+        "id" : "Location",
+        "type" : "object",
+        "properties" : {
+          "key" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "crtdDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "modifiedDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "city" : {
+            "type" : "string"
+          },
+          "userProfileKey" : {
+            "type" : "string"
+          },
+          "country" : {
+            "type" : "string"
+          },
+          "address" : {
+            "$ref" : "PostalAddress"
+          },
+          "geolocation" : {
+            "$ref" : "GeoPt"
+          },
+          "zipcode" : {
+            "type" : "integer"
+          },
+          "state" : {
+            "type" : "string"
+          }
+        }
+      },
+      "PostalAddress" : {
+        "id" : "PostalAddress",
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          }
+        }
+      },
+      "GeoPt" : {
+        "id" : "GeoPt",
+        "type" : "object",
+        "properties" : {
+          "latitude" : {
+            "type" : "number",
+            "format" : "float"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        }
+      },
+      "Sex" : {
+        "id" : "Sex",
+        "type" : "string",
+        "enum" : [ "MALE", "FEMALE" ]
+      },
+      "Link" : {
+        "id" : "Link",
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Text" : {
+        "id" : "Text",
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string"
+          }
+        }
+      },
+      "ResponseMessage" : {
+        "id" : "ResponseMessage",
+        "type" : "object",
+        "properties" : {
+          "message" : {
+            "type" : "string"
+          }
+        }
+      },
+      "UserAccount" : {
+        "id" : "UserAccount",
+        "type" : "object",
+        "properties" : {
+          "key" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "crtdDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "modifiedDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "profile" : {
+            "$ref" : "UserProfile"
+          },
+          "provider" : {
+            "type" : "string"
+          },
+          "matches" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Match"
+            }
+          },
+          "likes" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "UserProfile"
+            }
+          },
+          "dislikes" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "UserProfile"
+            }
+          },
+          "ageRngIntstd" : {
+            "type" : "array",
+            "items" : {
+              "type" : "integer"
+            }
+          },
+          "genderIntstd" : {
+            "$ref" : "Sex"
+          },
+          "milesRad" : {
+            "type" : "integer"
+          },
+          "likesPerDay" : {
+            "type" : "integer"
+          },
+          "messagePerDay" : {
+            "type" : "integer"
+          },
+          "_archived" : {
+            "type" : "boolean"
+          }
+        }
+      },
+      "Match" : {
+        "id" : "Match",
+        "type" : "object",
+        "properties" : {
+          "key" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "crtdDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "modifiedDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "user_first" : {
+            "$ref" : "UserProfile"
+          },
+          "user_second" : {
+            "$ref" : "UserProfile"
+          },
+          "messages" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Message"
+            }
+          },
+          "unmatch" : {
+            "type" : "boolean"
+          },
+          "_archived" : {
+            "type" : "boolean"
+          }
+        }
+      },
+      "Message" : {
+        "id" : "Message",
+        "type" : "object",
+        "properties" : {
+          "key" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "crtdDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "modifiedDate" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "txtmsg" : {
+            "$ref" : "Text"
+          },
+          "read" : {
+            "type" : "boolean"
+          },
+          "delivered" : {
+            "type" : "boolean"
+          },
+          "_archived" : {
+            "type" : "boolean"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.nepali36.endpoints.UserProfileEndpoint.saveUserProfile" : {
+        "request" : {
+          "$ref" : "UserProfile"
+        },
+        "response" : {
+          "$ref" : "UserProfile"
+        }
+      },
+      "com.nepali36.endpoints.UserProfileEndpoint.updateUserProfile" : {
+        "request" : {
+          "$ref" : "UserProfile"
+        },
+        "response" : {
+          "$ref" : "UserProfile"
+        }
+      },
+      "com.nepali36.endpoints.UserProfileEndpoint.getUserProfile" : {
+        "response" : {
+          "$ref" : "UserProfile"
+        }
+      },
+      "com.nepali36.endpoints.UserProfileEndpoint.deleteUserProfile" : {
+        "response" : {
+          "$ref" : "ResponseMessage"
+        }
+      },
+      "com.nepali36.endpoints.UserAccountEndPoint.saveUserAccount" : {
+        "request" : {
+          "$ref" : "UserAccount"
+        },
+        "response" : {
+          "$ref" : "UserAccount"
+        }
+      },
+      "com.nepali36.endpoints.UserAccountEndPoint.getUserAccount" : {
+        "response" : {
+          "$ref" : "UserAccount"
+        }
+      }
+    }
+  }
+}
